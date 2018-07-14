@@ -73,6 +73,11 @@ You can use direct download or:
 ```shell
 $ npm i ramd
 ```
+or use CDN:
+
+```html
+<script src="https://unpkg.com/ramd@1.0.1/src/ramd.min.js"></script>
+```
 
 <h3>License</h3>
 

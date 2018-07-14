@@ -1,6 +1,5 @@
 {
   "_from": "ramd",
-  "_id": "ramd@1.0.0",
   "_inBundle": false,
   "_integrity": "sha512-OJ5A30IieXiumHABPVF3nsT9yjzIRY0Vw+r4UAxHTWqJ0hRAg1DoTCCr4/cofTfnxDUOUOpQPwRIgvP7L4nhXQ==",
   "_location": "/ramd",
@@ -23,11 +22,7 @@
   "_shasum": "ae05c687e311973d29c182c3bbdae03af1e5e89f",
   "_spec": "ramd",
   "_where": "/Users/vladimir/Documents",
-  "author": {
-    "name": "Vladimir Carrer",
-    "email": "vladocar@gmail.com",
-    "url": "http://www.vcarrer.com"
-  },
+  "author": "Vladimir Carrer <vladocar@gmail.com> (http://www.vcarrer.com)",
   "bugs": {
     "url": "https://github.com/vladocar/ramd.js/issues"
   },
@@ -51,5 +46,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
