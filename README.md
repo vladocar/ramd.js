@@ -68,8 +68,10 @@ on($("#bt"), 'click', function(e) {
 
 <h3> Download & Installation </h3>
 
+You can use direct download or:
+
 ```shell
-$ npm i
+$ npm i ramd
 ```
 
 <h3>License</h3>

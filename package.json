@@ -1,0 +1,55 @@
+{
+  "_from": "ramd",
+  "_id": "ramd@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-OJ5A30IieXiumHABPVF3nsT9yjzIRY0Vw+r4UAxHTWqJ0hRAg1DoTCCr4/cofTfnxDUOUOpQPwRIgvP7L4nhXQ==",
+  "_location": "/ramd",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "ramd",
+    "name": "ramd",
+    "escapedName": "ramd",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ramd/-/ramd-1.0.0.tgz",
+  "_shasum": "ae05c687e311973d29c182c3bbdae03af1e5e89f",
+  "_spec": "ramd",
+  "_where": "/Users/vladimir/Documents",
+  "author": {
+    "name": "Vladimir Carrer",
+    "email": "vladocar@gmail.com",
+    "url": "http://www.vcarrer.com"
+  },
+  "bugs": {
+    "url": "https://github.com/vladocar/ramd.js/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "JavaScript library for making TODO like applications.",
+  "homepage": "https://github.com/vladocar/ramd.js#readme",
+  "keywords": [
+    "javascript",
+    "todo",
+    "library",
+    "framework"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "ramd",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladocar/ramd.js.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}
