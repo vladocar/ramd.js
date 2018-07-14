@@ -1,3 +1,7 @@
+[![License MIT](https://img.shields.io/badge/licence-MIT-blue.svg)](https://choosealicense.com/licenses/mit/)
+[![Gzip Size](https://img.badgesize.io/https://unpkg.com/ramd@1.0.1/src/ramd.min.js?compression=gzip)](https://unpkg.com/ramd@1.0.1/src/ramd.min.js)
+
+
 <p align="center"><img src="ramd-logo.png" /></p>
 
 <h1 align="center"> ramd.js </h1>
