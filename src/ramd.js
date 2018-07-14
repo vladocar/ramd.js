@@ -77,7 +77,8 @@ function del(obj, selector) {
       (selector)[i].parentNode.removeChild((selector)[i]);
     }
   }else {
-    delete obj[key];
+    var key1 = selector.getAttribute('data-keys');
+    delete obj[key1];
     selector.parentNode.removeChild(selector);
   }
 }
