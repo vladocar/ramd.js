@@ -1,0 +1,132 @@
+<!doctype html>
+
+<head>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <script src="src/ramd.js" language="javascript" type="text/javascript"></script>
+
+    <title>To Do List</title>
+    <style>
+        body {
+            font: 26px/1.5 Helvetica, sans-serif;
+            background-color: #EDEBDE;
+            word-wrap: break-word;
+        }
+        h1 {
+            font: 16px/1.5 Helvetica, sans-serif;
+            color: #72a606;
+            margin-top: 20px;
+        }
+        ul{
+          margin: 0;
+          padding: 0;
+        }
+        li {
+          display: block;
+          width: 400px;
+            float: left;
+
+            list-style-type: circle;
+            line-height: 1.5;
+            cursor: pointer;
+
+        }
+        .del {
+            float: left;
+            padding:0 13px;
+            margin: 5px;
+            cursor: pointer;
+            border: 1px solid #111;
+            border-radius: 100%;
+            clear: right;
+
+
+        }
+        .a {
+            text-decoration: overline
+        }
+        .main {
+            margin: 0 auto;
+            width: 480px;
+        }
+        #tx {
+            float: left;
+            width: 320px;
+            height: 85px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font: 21px/1.3 "Helvetica Neue", sans-serif;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        #bt {
+            float: left;
+            display: block;
+            font-size: 48px;
+            margin-left: 20px;
+            padding: 10px;
+            cursor: pointer;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            color: #fff;
+            background-color: #72a606;
+        }
+        .clear {
+            clear: both;
+        }
+    </style>
+
+
+    <script type="text/javascript">
+        function loadme() {
+
+            var el1 = {}
+
+            if (localStorage.getItem('abcd') !== null) {
+                el1 = getStorage("abcd");
+                render(el1, $("#todo")[0]);
+            }
+
+            on($("#bt"), 'click', function(e) {
+                add(el1, $("#todo")[0], "li", $("#tx")[0].value, "", "", "hello");
+                add(el1, $("#todo")[0], "div", "x", "", "", "del");
+                setStorage("abcd", el1);
+            });
+
+            on($("#todo"), 'click', function(e) {
+              if(($("li").indexOf(e.target))>=0){
+                e.target.contentEditable = "true";
+
+                on($("li"), 'blur', function(e) {
+                    modify(el1, e.target.getAttribute('data-keys'), e.target.innerHTML);
+                    setStorage("abcd", el1);
+                });
+              }
+            });
+
+            on($("#todo"), 'click', function(e) {
+              if(($(".del").indexOf(e.target))>=0){
+                del(el1, e.target.previousSibling);
+                del(el1, e.target);
+                setStorage("abcd", el1);
+              }
+            });
+        }
+    </script>
+
+
+</head>
+
+<body onload="loadme()">
+    <div class="main">
+        <h1>To Do List</h1>
+        <textarea placeholder="Insert Text ..." id="tx"></textarea> <span id="bt">Go</span>
+        <div class="clear"></div>
+        <ul id="todo">
+            <li>Hello World</li>
+
+        </ul>
+    </div>
+</body>
+
+</html>
