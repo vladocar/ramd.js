@@ -62,6 +62,8 @@ on($("#bt"), 'click', function(e) {
 
 <a href="https://vladocar.github.io/ramd.js/simple-todo.html"> Super simple TODO demo </a>
 
+<a href="https://vladocar.github.io/ramd.js/"> More complex TODO demo that saves the data in the browser</a>
+
 
 
 <h3> Download & Installation </h3>
