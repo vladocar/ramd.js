@@ -60,7 +60,7 @@ on($("#bt"), 'click', function(e) {
 
 <p> Here is the Demo of the super simple TODO: </p>
 
-<a href="#"> Super simple TODO demo </a>
+<a href="https://vladocar.github.io/ramd.js/simple-todo.html"> Super simple TODO demo </a>
 
 
 
