@@ -35,6 +35,9 @@ var someObjectName = {
 ```
 <p>The Object method "1531563018024-9718829aa677" is Timestamp - Random Number. You can use the Timestamp to determine when the element was added. </p>
 
+<p><b>Not just TODO lists.</b> This library can be used for render and store any kind of DOM elements. Menus, lists or individual HTML elements. It just takes the virtual DOM and generates DOM nodes. The advantage is that the virtual DOM can be stored anywhere not just in the browser.
+</p>
+
 <h3> What contains library? </h3>
 
 <ul>
